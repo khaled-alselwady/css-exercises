@@ -1,0 +1,8 @@
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #EEE;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: auto;
+}
