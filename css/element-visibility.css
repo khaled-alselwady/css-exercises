@@ -1,0 +1,16 @@
+div {
+    background-color: #EEE;
+
+    margin: 10px 0;
+}
+
+.first {
+
+    /* 
+    display: none; ===> hidden the element and its position (the next element can take the same position)
+    visibility: hidden; ===> hidden the element without its position (the next element can NOT take the same position)
+*/
+
+    /* display: none; */
+    visibility: hidden;
+}

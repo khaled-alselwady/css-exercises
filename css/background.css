@@ -1,0 +1,18 @@
+div {
+    background-color: red;
+    /* Color Name */
+    background-color: rgb(97 38 186);
+    /* Red Green Blue */
+    background-color: rgb(97 38 186 / 50%);
+    /* Red Green Blue with Alpha Channle (Transparency الشفافية) */
+    background-color: #d5b4d5;
+    /* Color Hex Code */
+
+    background-image: url("../imgs/white_icon_black_background.png");
+    background-repeat: no-repeat;
+
+    /* background-attachment: fixed; */
+    background-position: top center;
+    /* (y,x) */
+    background-size: auto;
+}

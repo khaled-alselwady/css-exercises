@@ -1,0 +1,25 @@
+div {
+    display: inline-block;
+    background-color: #EEE;
+
+    outline: black solid 5px;
+
+    padding: 15px;
+    margin: 5px;
+}
+
+.shape1 {
+    border: 5px solid red;
+}
+
+.shape2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green;
+}
+
+.shape3 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+}

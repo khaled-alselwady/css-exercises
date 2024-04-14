@@ -1,0 +1,22 @@
+/* Selector  [ the selector can be the Tag Name or Class(start with .) (Preferred) or ID(start with #) (UnPreferred) ]
+{
+    Property1: value1; [ Declaration ]
+    Property2: value2;
+}
+*/
+
+/* p {  (all paragraph tags in the html page will be affected)
+    color: red;
+    font-size: 40px;
+} */
+
+.class-p {
+    /* (all tags in the html page with calss value = "class-p" will be affected) (Preferred) */
+    color: red;
+    font-size: 40px;
+}
+
+/* #id-p { (only the tag in the html page with id value = "id-p" will be affected) (UnPreferred)
+    color: red;
+    font-size: 40px;
+} */

@@ -1,0 +1,38 @@
+div {
+    /* PADDING DOES NOT ACCEPT NEGATIVE VALUES but MARGIN ACCETPS */
+
+    /* Top   Right  Bottom  Left */
+    /* 10px  10px   10px    10px */
+    /* padding: 10px; */
+
+    /* Top   Right  Bottom  Left */
+    /* 10px  20px   10px    20px */
+    /* padding: 10px 20px; */
+
+    /* Top   Right  Bottom  Left */
+    /* 10px  20px   15px    20px */
+    /* padding: 10px 20px 15px; */
+
+    /* Top   Right  Bottom  Left */
+    /* 0px   0px    10px    0px */
+    /* padding: 0 0 10px; (unPreferred)*/
+    /** OR **/
+    /* Top   Right  Bottom  Left */
+    /* 0px   0px    10px    0px */
+    /* padding-bottom: 10px; */
+    /* (Preferred) */
+
+    background-color: #DDD;
+    padding: 10px;
+    /* inner */
+    width: 70%;
+    margin: auto;
+    /* outer */
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+
+    /* width style color */
+    border: 5px solid red;
+}

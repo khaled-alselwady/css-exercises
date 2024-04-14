@@ -1,0 +1,24 @@
+/* 
+Block
+- Take the full width if the width is not specified.
+- Add a line break before and after.
+- Respect Padding, Margin, Width and Height.
+
+Inline
+- Do not respect width and height.
+- Do not add a line break.
+- Respect Padding and Margin [just left and right].
+
+Inline-Block
+- Do not add a line break.
+- Respect Padding, Margin, Width and Height.
+*/
+
+span {
+    background-color: #EEE;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
