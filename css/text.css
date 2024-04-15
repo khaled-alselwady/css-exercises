@@ -1,23 +1,21 @@
-/*
-    Text Alignment: 
-    - Alignment
-    - Direction
-    - Vertical Alignment
-*/
 div {
-    background-color: #E0E0E0;
-    color: black;
-    text-align: center;
+    background-color: #EEE;
+
+    /* We should edit the text in the css using (text-transform) not in html */
+    text-transform: capitalize;
 }
 
-.arabic {
-    direction: rtl;
-}
+a {
+    background-color: red;
+    color: white;
 
-.english {
-    direction: ltr;
-}
+    padding: 5px 10px;
+    margin: 10px auto;
 
-img {
-    vertical-align: middle;
+    display: inline-block;
+
+    border-radius: 5px;
+
+    /* We use it to remove the underline from the text of the link */
+    text-decoration: none;
 }
