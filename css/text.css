@@ -1,21 +1,24 @@
+/* 
+    Text Spacing:
+    - Letter Spacing
+    - Word Spacing
+    - Indentation => (الفراغ الي في اول الفقرة)
+    - Line Height => (the best value is (1.6 - 1.7) or (160% - 170%))
+    - Whitespace => we use `nowrap` value for the Titles, because I don't want the text to be two lines, I just want one line
+    - Word Break
+*/
 div {
     background-color: #EEE;
 
-    /* We should edit the text in the css using (text-transform) not in html */
-    text-transform: capitalize;
-}
+    /* letter-spacing: 5px; 
+       word-spacing: 5px;
+       text-indent: 50px;
+    */
 
-a {
-    background-color: red;
-    color: white;
+    /* line-height: 1.6; */
 
-    padding: 5px 10px;
-    margin: 10px auto;
+    width: 300px;
+    /* white-space: nowrap; */
 
-    display: inline-block;
-
-    border-radius: 5px;
-
-    /* We use it to remove the underline from the text of the link */
-    text-decoration: none;
+    word-break: break-word;
 }
