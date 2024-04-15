@@ -1,24 +1,11 @@
-/* 
-    Text Spacing:
-    - Letter Spacing
-    - Word Spacing
-    - Indentation => (الفراغ الي في اول الفقرة)
-    - Line Height => (the best value is (1.6 - 1.7) or (160% - 170%))
-    - Whitespace => we use `nowrap` value for the Titles, because I don't want the text to be two lines, I just want one line
-    - Word Break
-*/
 div {
     background-color: #EEE;
 
-    /* letter-spacing: 5px; 
-       word-spacing: 5px;
-       text-indent: 50px;
-    */
+    width: 100px;
 
-    /* line-height: 1.6; */
+    padding: 10px;
 
-    width: 300px;
-    /* white-space: nowrap; */
-
-    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
