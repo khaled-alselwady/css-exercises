@@ -1,7 +1,23 @@
+/*
+    Text Alignment: 
+    - Alignment
+    - Direction
+    - Vertical Alignment
+*/
 div {
     background-color: #E0E0E0;
     color: black;
+    text-align: center;
+}
 
-    /* text-shadow: ==> X-Shadow  Y-Shadow  Blur  Color */
-    text-shadow: 1px 1px 1px rgb(251 0 244 / 75%);
+.arabic {
+    direction: rtl;
+}
+
+.english {
+    direction: ltr;
+}
+
+img {
+    vertical-align: middle;
 }
