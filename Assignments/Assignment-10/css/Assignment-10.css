@@ -1,0 +1,16 @@
+p {
+    padding: 5px;
+    margin: auto;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}

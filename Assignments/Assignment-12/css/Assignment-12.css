@@ -1,0 +1,21 @@
+a {
+    display: block;
+
+    background-color: #009688;
+    color: white;
+
+    width: fit-content;
+
+    text-decoration: none;
+
+    padding: 5px;
+    margin: 50% auto;
+
+    border-bottom: solid 5px #00514a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: solid 15px #00514a;
+    font-size: 50px;
+    font-weight: bold;
+}
