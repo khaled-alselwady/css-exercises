@@ -1,16 +1,31 @@
+/*
+    CSS Units:
+    - px
+    - em => Time (مرة)
+    - rem => Root Time (Root is html tag)
+    - Percentage => the percentage of the font it inherits from the nearest parent
+    - vw => ViewPort Width (ViewPort is the visible portion of a web page in the browser window.)
+    - vh => ViewPort Height
+
+    (1em = 16px) => This is wrong.
+    (1em = the size of the font it inherits from the nearest parent) => This is true.
+    (1rem = the size of the font in html tag [default is 16px]) => This is true.
+    (1vw = 1% from the width of the viewport [which is the visible portion of a web page in the browser window])
+    (1vh = 1% from the height of the viewport)
+
+    Default Font Size For Web Page Is 16px
+*/
+
 body {
-    font-family: "Cairo", sans-serif;
+    /* font-size: 40px; */
 }
-
-/* .with-ser {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.san-ser {
-    font-family: Arial, Helvetica, sans-serif;
-} */
 
 div {
-    background-color: #EEE;
-    padding: 10px;
+    /* font-size: 20px; */
+    font-size: 5vw;
+}
+
+div span {
+    /* font-size: 2em; */
+    /* font-size: 2rem; */
 }
