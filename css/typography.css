@@ -1,31 +1,13 @@
-/*
-    CSS Units:
-    - px
-    - em => Time (مرة)
-    - rem => Root Time (Root is html tag)
-    - Percentage => the percentage of the font it inherits from the nearest parent
-    - vw => ViewPort Width (ViewPort is the visible portion of a web page in the browser window.)
-    - vh => ViewPort Height
-
-    (1em = 16px) => This is wrong.
-    (1em = the size of the font it inherits from the nearest parent) => This is true.
-    (1rem = the size of the font in html tag [default is 16px]) => This is true.
-    (1vw = 1% from the width of the viewport [which is the visible portion of a web page in the browser window])
-    (1vh = 1% from the height of the viewport)
-
-    Default Font Size For Web Page Is 16px
-*/
-
-body {
-    /* font-size: 40px; */
+h1 {
+    font-weight: normal;
 }
 
 div {
-    /* font-size: 20px; */
-    font-size: 5vw;
+    /* font-style: italic; */
+    font-variant: small-caps;
+    font-weight: bold;
 }
 
-div span {
-    /* font-size: 2em; */
-    /* font-size: 2rem; */
+p {
+    text-transform: uppercase;
 }
