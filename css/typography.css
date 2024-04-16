@@ -1,0 +1,16 @@
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+/* .with-ser {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.san-ser {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+div {
+    background-color: #EEE;
+    padding: 10px;
+}
