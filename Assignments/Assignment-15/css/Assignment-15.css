@@ -1,0 +1,24 @@
+html {
+    font-size: 20px;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.text1 {
+    font-size: 2.5rem;
+    margin: inherit;
+}
+
+.text2 {
+    font-size: 2rem;
+    margin: inherit;
+}
+
+.text3 {
+    font-size: 1.5rem;
+    margin: inherit;
+}
