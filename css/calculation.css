@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    /* width: calc(88% / 5); */
+    /* margin-left: 2%; ==> (the width of one space) */
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+}
+
+/* 
+    Number of Spaces (Margins):
+    - if we want spaces only between the elements ===> (Number of Spaces = Numberr of Elements - 1)
+    - if we want spaces between the elements and also before first element and after last element ===> (Number of Spaces = Numberr of Elements + 1)
+*/
+
+/* 
+    [for four elements and each one has 1% width]
+
+    Content Width is: 100%
+    We have 5 Spaces (Margins) and each space is 1% so the total width for all spaces is: Width of a Space * Number of Spaces ===> (1% * 5 = 5%) from the content width
+    Available Space is: Content Width - Spaces Width ===> (100% - 5% = 95%)
+    We have 4 Elements so the width for each one is: Available Space / Number of Elements ===> (95% / 4 = 23.75%)
+*/
+
+/* 
+    [for five elements and each one has 2% width]
+    
+    Content Width is: 100%
+    We have 6 Spaces (Margins) and each space is 2% so the total width for all spaces is: Width of a Space * Number of Spaces ===> (2% * 6 = 12%) from the content width
+    Available Space is: Content Width - Spaces Width ===> (100% - 12% = 88%)
+    We have 5 Elements so the width for each one is: Available Space / Number of Elements ===> (88% / 5 = 17.6%)
+*/
+
+/* 
+    [for five elements and each one has 10px width]
+    
+    Content Width is: 100%
+    We have 6 Spaces (Margins) and each space is 10px so the total width for all spaces is: Width of a Space * Number of Spaces ===> (10px * 6 = 60px) from the content width
+    Available Space is: Content Width - Spaces Width ===> (100% - 60px)
+    We have 5 Elements so the width for each one is: Available Space / Number of Elements ===> ((100% - 60px) / 5)
+*/
