@@ -1,0 +1,15 @@
+/* 
+    Opacity ==> Change the transparency (الشفافية) of all content
+    background-color: rgb(255 0 0 / 10%); ==> Change the transparency of just the background
+*/
+
+.one {
+    background-color: red;
+    /* the value of opacity [0 - 1] or percentage, for example (0.1 = 10%) */
+    opacity: 0.1;
+    /* opacity: 10%; */
+}
+
+.two {
+    background-color: rgb(255 0 0 / 10%);
+}
