@@ -1,0 +1,33 @@
+.parent {
+    background-color: #eee;
+    width: 800px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.parent div {
+    background-color: #ddd;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.r1 {
+    width: calc(100% - 30px);
+}
+
+.r2 {
+    width: calc((100% - 60px) / 3);
+}
+
+.r3 {
+    width: calc((100% - 45px) / 2);
+}
+
+.r4 {
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}
