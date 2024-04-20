@@ -1,0 +1,35 @@
+/* 
+    - Z-Index property only works when an element has a specified position (e.g., position: relative, position: absolute, or position: fixed).
+    - You can set any value in the Z-Index, and the element with -1 value will appear under of all element.
+    - Elements can be layered using the Z-Index property.
+    - Elements with a higher Z-Index value will appear in front of elements with a lower Z-Index value.
+    - If two elements have the same Z-Index value, their stacking order is determined by their order in the HTML code, with the latter appearing on top.
+*/
+div {
+    color: white;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.two {
+    background-color: green;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+.three {
+    background-color: blue;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
