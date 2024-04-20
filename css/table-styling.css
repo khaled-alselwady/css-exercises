@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-spacing: 0;
+}
+
+table td {
+    padding: 15px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+}
+
+table thead td {
+    background-color: #009688;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    border-color: #009688;
+}
