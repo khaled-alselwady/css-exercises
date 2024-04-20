@@ -1,0 +1,46 @@
+/* 
+    Positin:
+    - Static => Default
+    - Relative => The emlement moves depending on itself.
+    - Absolute => The element moves depending on the parent if the position of the parent is Releative,
+                  otherwise it will move depending on the next parent has the Releative position,
+                  if there is no any parent with the Releative position,
+                  the element will move depending on the body.
+
+    - Fixed => The element moves depending on the body, and keep fixed after scrolling 
+    - Sticky
+*/
+
+body {
+    min-height: 5000px;
+}
+
+div {
+    color: white;
+    width: 100px;
+    padding: 10px;
+}
+
+.one {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+}
+
+.two {
+    background-color: green;
+}
+
+.parent {
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+}
+
+.parent-parent {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(197, 16, 217);
+    position: relative;
+}
