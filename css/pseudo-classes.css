@@ -1,0 +1,61 @@
+.one {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+.two {
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.one:hover {
+    background-color: black;
+}
+
+/* .ch+label {
+    color: red;
+} */
+
+.ch:checked+label {
+    color: red;
+}
+
+.ch:checked {
+    display: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* :empty {
+    border: 10px solid blue;
+} */
+
+div:empty {
+    border: 10px solid blue;
+}
+
+div:hover {
+    background-color: rgb(182, 25, 225);
+}
+
+.in {
+    border: 2px solid black;
+}
+
+.in:focus {
+    border-color: rgb(20 226 255);
+    outline: none;
+}
