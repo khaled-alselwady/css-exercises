@@ -1,6 +1,7 @@
 .parent {
     margin-bottom: 20px;
     overflow: hidden;
+    counter-increment: members-counter;
 }
 
 .one {
@@ -9,6 +10,25 @@
     width: 600px;
     float: left;
     position: relative;
+}
+
+.one::before {
+    content: attr(data-text);
+    display: none;
+}
+
+.one::after {
+    content: counter(members-counter);
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
 }
 
 .user {
@@ -22,26 +42,23 @@
     text-align: center;
 }
 
-.one::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    right: -10px;
-    top: 0;
-    background-color: #009688;
+ul {
+    list-style: none;
 }
 
-.one::before {
+ul li {
+    position: relative;
+}
+
+ul li::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: -20px;
     width: 0;
     height: 0;
-    background-color: white;
-    margin-top: -10px;
-    border-style: solid;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin: -10px;
     border-width: 10px;
+    border-style: solid;
     border-color: transparent #009688 transparent transparent;
 }
