@@ -1,0 +1,12 @@
+div {
+    background-color: #EEE;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:empty {
+    background-color: red;
+}

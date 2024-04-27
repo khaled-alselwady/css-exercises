@@ -1,0 +1,29 @@
+body {
+    position: relative;
+    /* Parent container is relatively positioned */
+    height: 100vh;
+    /* Set height to full viewport */
+    margin: 0;
+    /* Remove default body margins */
+}
+
+div {
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+}
+
+div::first-letter {
+    background-color: red;
+    padding: 7px;
+    /* margin: -7px 0px 0px -20px; */
+    margin-left: -20px;
+    margin-top: -7px;
+    font-weight: bold;
+    color: white;
+    float: left;
+}
