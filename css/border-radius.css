@@ -1,0 +1,14 @@
+/* 
+    to get circle shape, you have to put the same value in the width and height,
+    and put the border-radius = 50% OR the half of the width or height [width and height must be the same].
+*/
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 6px;
+    /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px; */
+}
