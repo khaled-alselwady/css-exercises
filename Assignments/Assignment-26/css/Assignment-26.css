@@ -1,0 +1,40 @@
+div {
+    counter-increment: counter;
+    background-color: #EEE;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    box-shadow:
+        -5px -5px 0 0 red,
+        5px 5px 0 0 #2196F3;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+div::before {
+    content: "ELement";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div::after {
+    content: counter(counter);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
