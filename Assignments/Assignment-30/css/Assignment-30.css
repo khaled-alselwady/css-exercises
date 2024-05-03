@@ -1,0 +1,23 @@
+div {
+    background-color: #EEEEEE !important;
+    text-align: center !important;
+    color: black !important;
+    border: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 400px;
+    height: 20px;
+    margin: 20px auto;
+    text-indent: -2000px;
+}
+
+div::after {
+    content: "Elzero";
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    left: 192px;
+    top: 20px;
+    text-indent: 0;
+}

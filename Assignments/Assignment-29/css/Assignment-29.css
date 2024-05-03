@@ -1,0 +1,23 @@
+.parent {
+    background-color: #F2F2F4;
+    padding: 10px;
+    margin: 50px auto;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    transition: margin-top 0.5s 0s linear;
+}
+
+.child1 {
+    background-color: #DEDEDC;
+    padding: 10px;
+    transition: margin-top 1s 0.5s linear;
+}
+
+.parent:hover {
+    margin-top: 30px;
+}
+
+.parent:hover .child1 {
+    margin-top: 30px;
+}
