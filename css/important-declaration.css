@@ -1,0 +1,8 @@
+.one {
+    background-color: #EEE !important;
+    /* we use `!important` for force overriding */
+}
+
+.one {
+    background-color: #228f14;
+}
