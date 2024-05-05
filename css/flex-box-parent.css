@@ -6,6 +6,50 @@
   - order: 0 => Default Value
   - flex-basis: auto => Default Value
   - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+  - align-self: auto => Default Value
+*/
+
+/* 
+    جمبع خواص ال flex مع شرح + ترتيب الحلقات
+
+  #51 
+   flex-basis: ; لحساب العرض لكن بطريقة ذكية خصوصا عند الوضع الطولي بحيث يبقى بالاب الحاوي
+   اذا flex: -grow -shrink  -basis
+   flex: inline-flex; لجعل العناصر جنب بعض 
+   
+   #50
+   flex-flow: 1; العناصر تأخذ كل الحجم المتبقي من الاب الحاوي  و ال0 هي الافتراضية 
+   flex-flow: 3; العنصر ياخذ حجم ثلاث عناصر بنفس الاب 
+   flex-shrink: ;  أولوية انكماش العنصر القيمة الافتراضية 1
+   order:0-99; ترتيب العناصر القيمة الأكبر لها الاولوية 
+   
+   align-content: center; 
+   align-content: space-around, space-between ; بكل شئ margins انه يأخذ المحتوى كامل بال alignitems يفرق عن ال
+   
+   #48
+   align-items: center ; التوسيط افقيا
+   align-items: flex-start; تبقى بالأعلى بدون تمدد
+   align-items:flex-end ; يصبح بالأسفل افقيا
+   م display:flex ; يجب وجوده
+   
+   
+   #47
+   justify-content: space-around; بين  العناصر و من البدايه و النهاية margins جعل 
+   justify-content: space-between; جعل مسافات (margins) متساوية بين العنااصر 
+   justify-content: space-evenly; دمج الخاصيتان الفوق 
+   justify-content: center ;
+   justify-content: flex-start; قيمة افتراضية 
+   justify-content: flex-end ; يعكسه 
+   
+   
+   #46
+   flex-flow: flex-direction + flex-wrap; و تضع قيم مكانها 
+   flex-wrap : wrap-reverse;تلف و تعكس 
+   flex-wrap: wrap; تلف العناصر للأسفل 
+   flex-wrap: nowrap; تبقى العناصر بنفس السطر 
+   flex-direction: column-reverse; اعمدة لكن من الاسفل للأعلى 
+   flex-direction: column ; ترتيب اعمدة 
+  flex-direction: row-reverse ;dir=rtl لعكس العناصر و الكتابة مثل ال
 */
 
 * {
@@ -25,9 +69,11 @@ h3 {
 .flex {
     background-color: #eee;
     width: 800px;
+    height: 300px;
     padding: 20px;
     margin: 20px auto;
-    display: inline-flex;
+    display: flex;
+    align-items: flex-start;
 }
 
 .flex div {
@@ -38,9 +84,4 @@ h3 {
     padding: 20px;
     margin-right: 5px;
     flex-grow: 1;
-}
-
-.in {
-    display: inline-block;
-    color: white;
 }
