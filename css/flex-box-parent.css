@@ -16,6 +16,12 @@
 
     ---
     - align-items: stretch => Default Value
+
+    ---
+    - align-content: stretch => Default Value
+
+    `align-items` is about aligning items along the cross-axis within a single line or row.
+    `align-content` is about distributing multiple lines or rows along the cross-axis.
 */
 
 * {
@@ -35,14 +41,13 @@ h3 {
 .flex {
     background-color: #eee;
     width: 600px;
+    height: 400px;
     padding: 20px;
     margin: 20px auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    /* Horizontal */
-    align-items: center;
-    /* Vertical */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
 }
 
 .flex div {
@@ -51,36 +56,4 @@ h3 {
     width: calc(100% / 3);
     text-align: center;
     padding: 20px;
-}
-
-.flex .one,
-.float .one {
-    height: 80px;
-}
-
-.float {
-    overflow: hidden;
-    background-color: #eee;
-    width: 600px;
-    padding: 20px;
-    margin: 20px auto;
-}
-
-.float div {
-    background-color: #f00;
-    color: white;
-    float: right;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 20px;
-}
-
-.center {
-    background-color: blue;
-    color: white;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
