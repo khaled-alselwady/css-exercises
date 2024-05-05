@@ -13,6 +13,9 @@
                      However, in `space-evenly`, all distances are equal between the elements,
                      and the distance after the last element and before the first element is also
                      the same as the distance between the elements.
+
+    ---
+    - align-items: stretch => Default Value
 */
 
 * {
@@ -25,26 +28,34 @@ body {
     background-color: black;
 }
 
+h3 {
+    color: white;
+}
+
 .flex {
     background-color: #eee;
     width: 600px;
     padding: 20px;
     margin: 20px auto;
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
-    /* flex-flow: row wrap;
-    justify-content: center; */
-
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* Horizontal */
+    align-items: center;
+    /* Vertical */
 }
 
 .flex div {
-    background-color: rgb(87, 24, 24);
+    background-color: #f00;
     color: white;
-    width: calc(95% / 3);
+    width: calc(100% / 3);
     text-align: center;
     padding: 20px;
+}
+
+.flex .one,
+.float .one {
+    height: 80px;
 }
 
 .float {
@@ -56,19 +67,20 @@ body {
 }
 
 .float div {
-    background-color: rgb(87, 24, 24);
+    background-color: #f00;
     color: white;
     float: right;
-    width: calc(98% / 3);
+    width: calc(100% / 3);
     text-align: center;
     padding: 20px;
 }
 
-h3 {
+.center {
+    background-color: blue;
     color: white;
-}
-
-.two {
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
