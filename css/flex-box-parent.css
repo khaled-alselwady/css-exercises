@@ -1,27 +1,9 @@
 /*
   Flexible Box
-  For Parent
-  - display: flex => To Start Flexible Box
-  - flex-direction: row => Default Value
-  - flex-wrap: nowrap => Default Value
-  - flex-flow: [Flex-Direction] + [Flex-Wrap]
-   ---
-  - justify-content: flex-start => Default Value
-  - justify-content: The difference between `space-evenly` and `space-around` is that in `space-around`,
-                     the spacing between the elements is equal, but the distance after the last element
-                     and before the first element is half the distance between the elements.
-                     However, in `space-evenly`, all distances are equal between the elements,
-                     and the distance after the last element and before the first element is also
-                     the same as the distance between the elements.
-
-    ---
-    - align-items: stretch => Default Value
-
-    ---
-    - align-content: stretch => Default Value
-
-    `align-items` is about aligning items along the cross-axis within a single line or row.
-    `align-content` is about distributing multiple lines or rows along the cross-axis.
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
 */
 
 * {
@@ -40,20 +22,18 @@ h3 {
 
 .flex {
     background-color: #eee;
-    width: 600px;
-    height: 400px;
+    width: 800px;
     padding: 20px;
     margin: 20px auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-between;
 }
 
 .flex div {
     background-color: #f00;
     color: white;
-    width: calc(100% / 3);
+    width: 80px;
     text-align: center;
     padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
 }
