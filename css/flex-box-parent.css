@@ -5,6 +5,14 @@
   - flex-direction: row => Default Value
   - flex-wrap: nowrap => Default Value
   - flex-flow: [Flex-Direction] + [Flex-Wrap]
+   ---
+  - justify-content: flex-start => Default Value
+  - justify-content: The difference between `space-evenly` and `space-around` is that in `space-around`,
+                     the spacing between the elements is equal, but the distance after the last element
+                     and before the first element is half the distance between the elements.
+                     However, in `space-evenly`, all distances are equal between the elements,
+                     and the distance after the last element and before the first element is also
+                     the same as the distance between the elements.
 */
 
 * {
@@ -25,13 +33,16 @@ body {
     display: flex;
     /* flex-direction: row;
     flex-wrap: nowrap; */
-    flex-flow: row nowrap;
+    /* flex-flow: row wrap;
+    justify-content: center; */
+
+    justify-content: space-evenly;
 }
 
 .flex div {
     background-color: rgb(87, 24, 24);
     color: white;
-    width: 25%;
+    width: calc(95% / 3);
     text-align: center;
     padding: 20px;
 }
@@ -48,11 +59,16 @@ body {
     background-color: rgb(87, 24, 24);
     color: white;
     float: right;
-    width: 25%;
+    width: calc(98% / 3);
     text-align: center;
     padding: 20px;
 }
 
 h3 {
     color: white;
+}
+
+.two {
+    margin-left: 1%;
+    margin-right: 1%;
 }
