@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EEE;
+
+    color: #F35320;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    /* border-right: 5px solid #F35320;
+    border-left: 5px solid #039ADF; */
+    box-shadow: 5px 0px 0px 0px #F35320,
+        -5px 0px 0px 0px #039ADF;
+}
