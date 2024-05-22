@@ -1,0 +1,9 @@
+input,
+p {
+    caret-color: red;
+}
+
+a {
+    /* to prevent any event */
+    pointer-events: none;
+}
