@@ -3,8 +3,8 @@
   Parent
   - display: grid | inline-grid
   - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
-  - Fraction is greedy, Auto is Shy.
-  -Auto takes the minmum space to stay alive, But the fracture takes up the maximum possible space
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
 */
 
 * {
@@ -21,7 +21,11 @@ body {
     height: 500px;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* row-gap: 10px;
+  column-gap: 10px; */
+    gap: 10px 10px;
 }
 
 .parent div {
