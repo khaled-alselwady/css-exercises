@@ -5,6 +5,8 @@
   - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
   - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
   - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
 */
 
 * {
@@ -21,11 +23,11 @@ body {
     height: 500px;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    /* row-gap: 10px;
-  column-gap: 10px; */
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 10px 10px;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .parent div {
