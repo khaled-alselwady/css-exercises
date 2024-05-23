@@ -1,0 +1,34 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - Fraction is greedy, Auto is Shy.
+  -Auto takes the minmum space to stay alive, But the fracture takes up the maximum possible space
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+}
+
+.parent div {
+    background-color: rgb(131, 88, 88);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
