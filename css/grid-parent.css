@@ -11,30 +11,56 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-    background-color: black;
+ul {
+    list-style: none;
 }
 
-.parent {
-    margin: 20px auto;
-    width: 800px;
-    height: 500px;
-    background-color: #ddd;
+ul li {
+    display: inline-block;
+}
+
+.page {
+    height: 100vh;
+    background-color: #EEE;
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px 10px;
-    justify-content: space-between;
-    align-content: space-between;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "logo logo logo nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont . side side"
+        "foot foot foot foot foot foot foot foot foot foot";
 }
 
-.parent div {
-    background-color: rgb(131, 88, 88);
+h2 {
+    grid-area: logo;
+    background-color: red;
     color: white;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: Blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+    background-color: rgb(95, 30, 99);
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    background-color: black;
+    color: white;
 }
