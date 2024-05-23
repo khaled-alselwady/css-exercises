@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    background-color: #EEE;
+    width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    border-left: 10px solid red;
+    border-right: 10px solid purple;
+    position: relative;
+}
+
+div::first-letter {
+    color: red;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: red;
+    height: 10px;
+    background-image: linear-gradient(to right,
+            red 20%,
+            blue 20%,
+            blue 40%,
+            green 40%,
+            green 60%,
+            red 60%,
+            red 80%,
+            purple 80%,
+            purple 100%);
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: red;
+    height: 10px;
+    background-image: linear-gradient(to right,
+            red 20%,
+            blue 20%,
+            blue 40%,
+            green 40%,
+            green 60%,
+            red 60%,
+            red 80%,
+            purple 80%,
+            purple 100%);
+}

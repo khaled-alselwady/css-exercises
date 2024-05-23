@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+input {
+    background-color: #EEE;
+    width: 600px;
+    padding: 10px;
+    border: none;
+    caret-color: red;
+}
+
+div::after {
+    content: "";
+    width: 580px;
+    height: 5px;
+    bottom: 6px;
+    right: 10px;
+    position: absolute;
+    background-image: linear-gradient(to right, red 50%, green 50%);
+}
+
+input:focus {
+    outline: none;
+}
