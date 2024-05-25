@@ -3,24 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/grid-parent.css">
+    <link rel="stylesheet" href="css/grid-child.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="page">
-        <h2>Elzero</h2>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <section>Content</section>
-        <aside>Sidebar</aside>
-        <footer>Footer</footer>
+    <div class="parent">
+        <div style="grid-row: 1 / 5">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div style="grid-row: span 2">8</div>
+        <div>9</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="grid-column: span 3">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
     </div>
 </body>
 

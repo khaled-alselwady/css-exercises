@@ -1,0 +1,33 @@
+/* 
+    Child
+  - grid-column: [Grid-Column-Start] / [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] / [Grid-Row-End]
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(88, 87, 87);
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #180d0d;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: rgb(107, 27, 27);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
